@@ -1,0 +1,17 @@
+package utils;
+
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.DataProvider;
+
+import utils.ExcelReader;
+
+public class TestUtil{
+	
+
+	public void Type(String value)	{
+		Actions action = new Actions(SeleniumDriver.getDriver());
+		action.sendKeys(value);		
+	}
+		
+	
+}

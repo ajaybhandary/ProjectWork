@@ -1,0 +1,42 @@
+package steps;
+import utils.TestUtil;
+
+import java.lang.reflect.Method;
+import java.util.Hashtable;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import utils.TestUtil;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.actions.SignUpPageActions;
+import utils.ExcelReader;
+import utils.SeleniumDriver;
+import utils.TestUtil;
+public class SignUpSteps {
+	
+	SignUpPageActions signUpPageActions = new SignUpPageActions();
+	TestUtil testUtil = new TestUtil();
+	@Test(dataProvider="getData")
+	@Given("Rhipe program officer is on the SignUp page of the website")
+	public void rhipe_program_officer_is_on_the_SignUp_page(Hashtable<String,String> data)) {
+	testUtil.getData();
+	    
+	}
+	
+	@When("Rhipe program officer fills in all the details of the customer in the SignUp form")
+	public void rhipe_program_officer_fills_in_all_the_details_of_the_customer_in_the_SignUp_form() {
+				
+
+	}
+
+	@Then("Rhipe customer will be successfully signed up.")
+	public void rhipe_customer_will_be_successfully_signed_up() {
+	   
+	}
+	
+
+}

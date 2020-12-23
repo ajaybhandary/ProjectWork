@@ -1,0 +1,11 @@
+@sanity
+Feature: SignUpTest
+  As a Rhipe program officer
+  In order to sign up Rhipe customer successfully,
+  I want to be able to fill the sign up form with details
+
+  @SignUp-Positive
+  Scenario: Fill up sign up form with details
+    Given Rhipe program officer is on the SignUp page of the website
+    When Rhipe program officer fills in all the details of the customer in the SignUp form
+    Then Rhipe customer will be successfully signed up.
