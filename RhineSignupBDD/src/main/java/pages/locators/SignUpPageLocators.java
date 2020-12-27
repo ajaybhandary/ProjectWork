@@ -47,7 +47,7 @@ public class SignUpPageLocators {
 	@FindBy(how = How.NAME, using = "Source")
 	public WebElement sourceDropdown;
 	
-	@FindBy(how = How.NAME, using = "OtherIndustryType")
+	@FindBy(how = How.NAME, using = "IndustryType")
 	public WebElement industryDropdown;
 	
 	@FindBy(how = How.NAME, using = "PrimaryContactFirstName")

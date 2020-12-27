@@ -36,25 +36,25 @@ public class SignUpSteps {
 		ExcelReader externalData = new ExcelReader();
 	        List<Map<String, String>> testData = externalData.getData("./src/test/resources/Excel/testdata.xlsx", 0);	
 	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("customerName"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("registrationNumber"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("street1"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("street2"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("street3"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("city"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("state"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("country"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("postcode"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("mainPhone"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("fax"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("webUrl"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("email"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("source"));
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("otherIndustryType"));  
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("primaryContactFirstName"));  
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("primaryContactLastName"));  
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("primaryContactPhone"));  
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("primaryContactJobTitle"));  
-	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("primaryContactEmail"));  
+	        signUpPageActions.enterRegistrationNumber(testData.get(rowNumber).get("registrationNumber"));
+	        signUpPageActions.enterStreet1(testData.get(rowNumber).get("street1"));
+	        signUpPageActions.enterStreet2(testData.get(rowNumber).get("street2"));
+	        signUpPageActions.enterStreet3(testData.get(rowNumber).get("street3"));
+	        signUpPageActions.enterCity(testData.get(rowNumber).get("city"));
+	        signUpPageActions.enterState(testData.get(rowNumber).get("state"));
+	        signUpPageActions.selectCountryName(testData.get(rowNumber).get("country"));
+	        signUpPageActions.enterPostCode(testData.get(rowNumber).get("postcode"));
+	        signUpPageActions.enterMainPhone(testData.get(rowNumber).get("mainPhone"));
+	        signUpPageActions.enterFax(testData.get(rowNumber).get("fax"));
+	        signUpPageActions.enterWebUrl(testData.get(rowNumber).get("webUrl"));
+	        signUpPageActions.enterEmail(testData.get(rowNumber).get("email"));
+	        signUpPageActions.selectSourceName(testData.get(rowNumber).get("source"));
+	        signUpPageActions.selectIndustryName(testData.get(rowNumber).get("otherIndustryType"));  
+	        signUpPageActions.enterPrimaryContactFirstName(testData.get(rowNumber).get("primaryContactFirstName"));  
+	        signUpPageActions.enterPrimaryContactLastName(testData.get(rowNumber).get("primaryContactLastName"));  
+	        signUpPageActions.enterPrimaryContactPhone(testData.get(rowNumber).get("primaryContactPhone"));  
+	        signUpPageActions.enterPrimaryContactJobTitle(testData.get(rowNumber).get("primaryContactJobTitle"));  
+	        signUpPageActions.enterPrimaryContactEmail(testData.get(rowNumber).get("primaryContactEmail"));  
 	         
 	        
 	}
