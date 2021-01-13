@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,13 +12,20 @@ public class SeleniumDriver {
 	//init WebDriver
 	private static WebDriver driver;
 	private static WebDriverWait waitDriver;
+	public final static int TIMEOUT = 30;
+	public final static int PAGE_LOAD_TIMEOUT = 50;
 
 
 	private SeleniumDriver() 
 	{
-		System.setProperty("Webdrive.chrome.driver" , System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
+		System.out.println("Testing"+System.getProperty("user.dir"));
+		
+		System.setProperty("webdriver.chrome.driver" , System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		waitDriver = new WebDriverWait(driver,TIMEOUT);
+		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	}
 
 	public static void openPage(String url)
@@ -34,8 +43,7 @@ public class SeleniumDriver {
 			seleniumDriver = new SeleniumDriver();
 		}
 	}
-	
-	
+
 
 	public static void tearDown()
 	{

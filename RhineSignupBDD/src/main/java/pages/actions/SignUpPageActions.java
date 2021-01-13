@@ -4,8 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+
 
 import pages.locators.SignUpPageLocators;
 import utils.SeleniumDriver;
@@ -114,11 +113,13 @@ public class SignUpPageActions {
 		Type(signUpPageLocators.primaryContactEmailField, sheetValue);		
 	}
 	
-	public void Type(WebElement target,String value)	{
-		Actions action = new Actions(SeleniumDriver.getDriver());
-			action.sendKeys(target,value);
+	public void Type(WebElement target,String value)	
+	{
+	//	target.click();
+		target.sendKeys(value);
+		
 	}
 		
 	
-	
+		
 }

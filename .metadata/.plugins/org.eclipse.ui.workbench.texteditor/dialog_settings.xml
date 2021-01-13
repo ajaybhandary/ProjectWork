@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="cucumber-core"/>
+			<item value="core"/>
+			<item value="getInstance().setup();"/>
+			<item value="maven"/>
+			<item value="junit"/>
+			<item value="cucumber-testng"/>
+			<item value="testng"/>
+			<item value="Row.CREATE_NULL_AS_BLANK"/>
+			<item value="User login with the following username and password with data in excel at"/>
+			<item value="User login with the following username and password"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Row.MissingCellPolicy.CREATE_NULL_AS_BLANK"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1195"/>
+		<item key="DIALOG_Y_ORIGIN" value="251"/>
+		<item key="DIALOG_WIDTH" value="298"/>
+		<item key="DIALOG_HEIGHT" value="407"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-27|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

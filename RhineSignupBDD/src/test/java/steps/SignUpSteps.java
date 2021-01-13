@@ -1,15 +1,9 @@
 package steps;
 import utils.SeleniumDriver;
-
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+
 
 
 import io.cucumber.java.en.Given;
@@ -36,7 +30,7 @@ public class SignUpSteps {
 		ExcelReader externalData = new ExcelReader();
 	        List<Map<String, String>> testData = externalData.getData("./src/test/resources/Excel/testdata.xlsx", 0);	
 	        signUpPageActions.enterCustomerName(testData.get(rowNumber).get("customerName"));
-	        signUpPageActions.enterRegistrationNumber(testData.get(rowNumber).get("registrationNumber"));
+	       signUpPageActions.enterRegistrationNumber(testData.get(rowNumber).get("registrationNumber"));
 	        signUpPageActions.enterStreet1(testData.get(rowNumber).get("street1"));
 	        signUpPageActions.enterStreet2(testData.get(rowNumber).get("street2"));
 	        signUpPageActions.enterStreet3(testData.get(rowNumber).get("street3"));
@@ -55,9 +49,8 @@ public class SignUpSteps {
 	        signUpPageActions.enterPrimaryContactPhone(testData.get(rowNumber).get("primaryContactPhone"));  
 	        signUpPageActions.enterPrimaryContactJobTitle(testData.get(rowNumber).get("primaryContactJobTitle"));  
 	        signUpPageActions.enterPrimaryContactEmail(testData.get(rowNumber).get("primaryContactEmail"));  
-	         
-	        
-	}
+	       
+	    }
 
 	@Then("Rhipe customer will be successfully signed up.")
 	public void rhipe_customer_will_be_successfully_signed_up() {
